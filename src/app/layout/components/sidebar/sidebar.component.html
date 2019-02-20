@@ -21,16 +21,31 @@
     <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/blank-page']">
       <mat-icon class="sidenav-icon">insert_drive_file</mat-icon> {{ 'Blank Page' | translate }}
     </a>
-    <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/pim']">
-      <mat-icon class="sidenav-icon">input</mat-icon> {{ 'PIM' | translate }}
-    </a>
+    <!-- PIM Menu -->
+    <div class="nested-menu">
+      <a mat-list-item (click)="addExpandClass('pages')">
+        <mat-icon class="sidenav-icon">input</mat-icon> {{ 'PIM' | translate }}
+      </a>
+      <ul class="nested submenu" [class.expand]="showMenu === 'pages'">
+        <li>
+          <a href="javascript:void(0)" [routerLink]="['/pim']"><span>{{ 'Add User' | translate }}</span></a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"><span>{{ 'Submenu' | translate }}</span></a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"><span>{{ 'Submenu' | translate }}</span></a>
+        </li>
+      </ul>
+    </div>
+
     <div class="nested-menu">
       <a mat-list-item (click)="addExpandClass('pages')">
         <mat-icon class="sidenav-icon">add</mat-icon> {{ 'Menu' | translate }}
       </a>
       <ul class="nested submenu" [class.expand]="showMenu === 'pages'">
         <li>
-          <a href="javascript:void(0)"><span>{{ 'Submenu' | translate }}</span></a>
+          <a href="javascript:void(0)" [routerLink]="['/pim']"><span>{{ 'Submenu' | translate }}</span></a>
         </li>
         <li>
           <a href="javascript:void(0)"><span>{{ 'Submenu' | translate }}</span></a>
