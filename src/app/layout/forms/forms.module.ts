@@ -3,9 +3,17 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule as FormModule, ReactiveFormsModule } from '@angular/forms';
 import {
-    MatAutocompleteModule, MatCardModule, MatCheckboxModule, MatDatepickerModule,
-    MatFormFieldModule, MatInputModule, MatNativeDateModule, MatRadioModule, MatSelectModule,
-    MatSliderModule, MatSlideToggleModule
+  MatAutocompleteModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatDatepickerModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatNativeDateModule,
+  MatRadioModule,
+  MatSelectModule,
+  MatSliderModule,
+  MatSlideToggleModule
 } from '@angular/material';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
@@ -16,32 +24,25 @@ import { FormsComponent } from './forms.component';
 import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormsRoutingModule,
-        MatAutocompleteModule,
-        FormModule,
-        ReactiveFormsModule,
-        MatSlideToggleModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatCardModule,
-        MatCheckboxModule,
-        MatRadioModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
-        MatFormFieldModule,
-        MatSelectModule,
-        MatSliderModule,
-        FlexLayoutModule.withConfig({addFlexToParent: false})
-    ],
-    declarations: [
-        FormsComponent,
-        CheckboxComponent,
-        DatePickerComponent,
-        FormFieldComponent,
-        SliderComponent,
-        AutoCompleteComponent
-    ]
+  imports: [
+    CommonModule,
+    FormsRoutingModule,
+    MatAutocompleteModule,
+    FormModule,
+    ReactiveFormsModule,
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatSliderModule,
+    FlexLayoutModule.withConfig({ addFlexToParent: false })
+  ],
+  declarations: [FormsComponent, CheckboxComponent, DatePickerComponent, FormFieldComponent, SliderComponent, AutoCompleteComponent]
 })
 export class FormsModule {}
