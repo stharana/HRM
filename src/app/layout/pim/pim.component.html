@@ -11,4 +11,23 @@
       <input matInput placeholder="Last Name" />
     </mat-form-field>
   </div>
+  <div class="row">
+
+    <mat-form-field>
+      <input matInput placeholder="Other ID" />
+    </mat-form-field>
+
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </mat-card-content>
+
+  </div>
+
+
+
+
 </div>

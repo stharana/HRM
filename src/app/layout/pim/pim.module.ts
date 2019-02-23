@@ -15,18 +15,11 @@ import {
   MatSliderModule,
   MatSlideToggleModule
 } from '@angular/material';
-import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
-import { CheckboxComponent } from './checkbox/checkbox.component';
-import { DatePickerComponent } from './date-picker/date-picker.component';
-import { FormFieldComponent } from './form-field/form-field.component';
-import { FormsRoutingModule } from './forms-routing.module';
-import { FormsComponent } from './forms.component';
-import { SliderComponent } from './slider/slider.component';
+import { PimComponent } from './pim.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsRoutingModule,
     MatAutocompleteModule,
     FormModule,
     ReactiveFormsModule,
@@ -43,6 +36,6 @@ import { SliderComponent } from './slider/slider.component';
     MatSliderModule,
     FlexLayoutModule.withConfig({ addFlexToParent: false })
   ],
-  declarations: [FormsComponent, CheckboxComponent, DatePickerComponent, FormFieldComponent, AutoCompleteComponent, SliderComponent]
+  declarations: [PimComponent]
 })
 export class FormsModule {}
