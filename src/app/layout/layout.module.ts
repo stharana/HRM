@@ -6,7 +6,7 @@ import {
     MatInputModule,
     MatListModule,
     MatMenuModule,
-    MatSidenavModule,
+  MatSidenavModule, MatTabsModule,
     MatToolbarModule
 } from '@angular/material';
 import { TranslateModule } from '@ngx-translate/core';
@@ -29,6 +29,7 @@ import { PimComponent } from './pim/pim.component';
         MatInputModule,
         MatMenuModule,
         MatListModule,
+      MatTabsModule,
         TranslateModule
     ],
     declarations: [LayoutComponent, NavComponent, TopnavComponent, SidebarComponent, PimComponent,]

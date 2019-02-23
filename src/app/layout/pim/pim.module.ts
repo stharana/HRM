@@ -13,7 +13,7 @@ import {
   MatRadioModule,
   MatSelectModule,
   MatSliderModule,
-  MatSlideToggleModule
+  MatSlideToggleModule, MatTabsModule
 } from '@angular/material';
 import { PimComponent } from './pim.component';
 
