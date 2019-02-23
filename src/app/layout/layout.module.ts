@@ -6,8 +6,20 @@ import {
     MatInputModule,
     MatListModule,
     MatMenuModule,
-  MatSidenavModule, MatTabsModule,
-    MatToolbarModule
+    MatGridListModule,
+    MatSidenavModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatDatepickerModule,
+    MatAutocompleteModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSliderModule,
+    MatSlideToggleModule
 } from '@angular/material';
 import { TranslateModule } from '@ngx-translate/core';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -30,7 +42,18 @@ import { PimComponent } from './pim/pim.component';
         MatMenuModule,
         MatListModule,
       MatTabsModule,
-        TranslateModule
+      MatGridListModule,
+        TranslateModule,
+        MatDatepickerModule,
+        MatAutocompleteModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSliderModule,
+    MatSlideToggleModule
     ],
     declarations: [LayoutComponent, NavComponent, TopnavComponent, SidebarComponent, PimComponent,]
 })
