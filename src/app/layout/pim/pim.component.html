@@ -219,4 +219,93 @@
       </mat-form-field>
     </div>
   </mat-tab>
+
+  <mat-tab label="Social Media Details">
+    <div class="form-container">
+      <mat-form-field>
+        <mat-select placeholder="Type">
+          <mat-option value="option">Option</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Link" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Handle" />
+      </mat-form-field>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Emergency Contacts">
+    <div class="form-container">
+      <mat-form-field>
+        <input matInput placeholder="Name" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Relationship" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Home Telephone" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Mobile" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Work Telephone" />
+      </mat-form-field>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Dependents">
+    <div class="form-container">
+      <mat-form-field>
+        <input matInput placeholder="Name" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="Type">
+          <mat-option value="option">Option</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker8" placeholder="Date Of Birth" />
+        <mat-datepicker-toggle matSuffix [for]="picker8"></mat-datepicker-toggle>
+        <mat-datepicker #picker8></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Marriage Certificate No:" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker9" placeholder="Date Of Registration" />
+        <mat-datepicker-toggle matSuffix [for]="picker9"></mat-datepicker-toggle>
+        <mat-datepicker #picker9></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Immigration">
+    <div class="form-container">
+      <mat-form-field>
+        <input matInput placeholder="Name" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="Type">
+          <mat-option value="option">Option</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker8" placeholder="Date Of Birth" />
+        <mat-datepicker-toggle matSuffix [for]="picker8"></mat-datepicker-toggle>
+        <mat-datepicker #picker8></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Marriage Certificate No:" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker9" placeholder="Date Of Registration" />
+        <mat-datepicker-toggle matSuffix [for]="picker9"></mat-datepicker-toggle>
+        <mat-datepicker #picker9></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </mat-tab>
+
 </mat-tab-group>
